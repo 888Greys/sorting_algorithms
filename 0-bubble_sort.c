@@ -1,7 +1,7 @@
 #include "sort.h"
 
 /**
-* swap_ints - Function that swaps two values.
+* swap_ints - Function that swaps two values in a list.
 *
 * @a: the first value
 * @b: the second value
@@ -16,12 +16,12 @@ tmp = *b;
 *a = tmp;
 }
 
-
 /**
 * bubble_sort - Calls function
 * @array: Array to sort.
 * @size: Size of the array.
-* Description: Function that orts an array using bubble sort method
+* Description: Function that orts an
+*array using bubble sort method
 * Return: 0
 */
 void bubble_sort(int *array, size_t size)
@@ -31,9 +31,9 @@ unsigned int i, j;
 if (!array || size < 2)
 return;
 
-for (i = 0; i < size - 1; i++) /* loop to access each array element */
+for (i = 0; i < size - 1; i++)
 {
-for (j = 0; j < size - i - 1; j++) /* loop to compare array elements */
+for (j = 0; j < size - i - 1; j++)
 {
 if (array[j] > array[j + 1])
 {
